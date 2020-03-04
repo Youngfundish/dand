@@ -11,6 +11,7 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
 <Router>
     <Switch>
+        <Route path="/editor/*" component={EditorApp}/>
         <Route path="/" component={App}/>
     </Switch>
 </Router>
