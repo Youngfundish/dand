@@ -5,7 +5,7 @@ import './index.css';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
 
 import App from './App';
-import EditorApp from './components/editor/EditorApp.js'
+import EditorApp from './components/editor/EditorApp'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
