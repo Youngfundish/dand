@@ -12,12 +12,12 @@ const EditorServices = () => {
     }, []);
         return ( 
             <>
-            <table class="table">
-  <thead class="thead-dark">
+            <table className="table">
+  <thead className="thead-dark">
     <tr>
       <th scope="col">#</th>
       <th scope="col">Title</th>
-      <th scope="col">Image</th>
+      <th scope="col">Teaser</th>
       <th scope="col">Actions</th>
     </tr>
   </thead>
@@ -26,9 +26,9 @@ const EditorServices = () => {
           products != null ?
           products.map(product => (
             <tr>
-      <th scope="row">{product.id}</th>
+      <th scope="row" key={product.id}>{product.id}</th>
       <td>{product.title}</td>
-      <td>{product.image}</td>
+      <td>{product.teaser}</td>
       <td>Edit Delete</td>
     </tr>
           ))

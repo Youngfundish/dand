@@ -9,6 +9,7 @@ import EditorServices from './pages/EditorServices';
 
 
 import DbProvider from './context/DbProvider';
+import Validation from './pages/Validation';
 
 
 
@@ -22,6 +23,7 @@ const EditorApp = () => {
             <main className="container py-4">
             <Route exact path="/editor/" component={Dashboard}/>
             <Route path="/editor/services" component={EditorServices}/>
+            <Route path="/editor/validation" component={Validation}/>
             </main>
             <EditorFooter />
             </DbProvider>

@@ -5,14 +5,14 @@ import axios from "axios";
 
 
 const DbProvider = (props) => {
-    
-    const baseApi ="https://heka4.apache.techcollege.dk/api/products/";
+
+    const baseApi ="https://heka4.apache.techcollege.dk/api/";
 
     return (
         <>
         <DbContext.Provider value={{
-            getProduct: async () => {
-                let response = await axios.get(baseApi + "products/1");
+            getProducts: async () => {
+                let response = await axios.get(baseApi + "products/");
                 console.log(response.data);
                 return response.data;
             }
